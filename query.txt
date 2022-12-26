@@ -1,0 +1,4 @@
+SELECT name AS Company, substr(ts,1,10) as Date, AVG(volatility) as Avg_Volatility, MAX(volatility) as Max_Volatility, MIN(volatility) as Min_Volatility
+FROM "17"
+GROUP BY 1,2
+ORDER BY 1,2;
